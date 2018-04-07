@@ -1,14 +1,14 @@
 6
 6
-0  86  700 300 lantern
-1  84  100 500 amphipod
-2  82  300 500 sunfish
-3  80  500 500 copepod
-4  78  700 500 dinoflagellate
-5  76  100 700 diatom
-0  74  0   1
-1  72  0   3
-2  70  1   3
-3  68  2   3
-4  66  3   4
-5  64  3   5
+0  86  700 300 lantern.jpg
+1  84  100 500 amphipods.jpg
+2  82  300 500 sunfish.jpg
+3  80  500 500 copepods.jpg
+4  78  700 500 dinofla.jpg
+5  76  100 700 diatoms.jpg
+0  0   1   74
+1  0   3   72
+2  1   3   70
+3  2   3   68
+4  3   4   66
+5  3   5   64
