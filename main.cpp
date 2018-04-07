@@ -32,7 +32,7 @@ int main()
 
         if ((mouse_b&1))
         {
-            if (mouse_y>150 && mouse_y<200)
+            if (mouse_y>100 && mouse_y<150)
             {
                 clear_bitmap(buffer);
                 blit(buffer, screen, 0,0,0,0,1024, 768);
@@ -52,7 +52,51 @@ int main()
     g.sauv_graph();
                 rest(20);
             }
-            else if (mouse_y>280 && mouse_y<330)
+
+
+
+           else if (mouse_y>270 && mouse_y<320)
+            {
+                clear_bitmap(buffer);
+                blit(buffer, screen, 0,0,0,0,1024, 768);
+                 grman::set_pictures_path("image");
+
+    /// Un exemple de graphe
+    Graph g;
+    g.dessiner_graphe2();
+                while ( !key[KEY_ESC] )
+    {
+        /// Il faut appeler les méthodes d'update des objets qui comportent des widgets
+        g.update();
+
+        /// Mise à jour générale (clavier/souris/buffer etc...)
+        grman::mettre_a_jour();
+    }
+    g.sauv_graph2();
+                rest(20);
+            }
+
+           else if (mouse_y>440 && mouse_y<490)
+            {
+                clear_bitmap(buffer);
+                blit(buffer, screen, 0,0,0,0,1024, 768);
+                 grman::set_pictures_path("image");
+
+    /// Un exemple de graphe
+    Graph g;
+    g.dessiner_graphe3();
+                while ( !key[KEY_ESC] )
+    {
+        /// Il faut appeler les méthodes d'update des objets qui comportent des widgets
+        g.update();
+
+        /// Mise à jour générale (clavier/souris/buffer etc...)
+        grman::mettre_a_jour();
+    }
+    g.sauv_graph3();
+                rest(20);
+            }
+            else if (mouse_y>580 && mouse_y<630)
             {
                 clear_bitmap(buffer);
 
@@ -65,7 +109,7 @@ int main()
                 rest(500);
             }
 
-            else if (mouse_y>410 && mouse_y<460)
+            else if (mouse_y>680 && mouse_y<730)
             {
                 clear_bitmap(buffer);
                 x=1;
